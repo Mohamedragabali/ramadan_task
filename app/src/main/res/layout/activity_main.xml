@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/backgroundColor"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    app:layoutDescription="@xml/activity_main_scene">
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/masqed"
         android:layout_width="match_parent"
         android:layout_height="364dp"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@id/ramdanKarream"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginHorizontal="16dp"
@@ -59,14 +61,67 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
         <TextView
+            android:id="@+id/tv1"
             android:layout_width="match_parent"
             android:layout_height="64dp"
             android:textSize="24dp"
             android:textColor="@color/white"
-            android:text="الفجر"
+            android:text="الفجر  :  04:00"
             app:layout_constraintStart_toStartOf="parent"
             android:gravity="start|center"
             app:layout_constraintTop_toBottomOf="@id/line"
+            android:background="@drawable/corner"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            android:text="الظهر  :  12:00"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="start|center"
+            app:layout_constraintTop_toBottomOf="@id/tv1"
+            android:background="@drawable/corner"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            android:text="العصر  :  15:00"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="start|center"
+            app:layout_constraintTop_toBottomOf="@id/tv2"
+            android:background="@drawable/corner"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            android:text="المغرب :  18:00"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="start|center"
+            app:layout_constraintTop_toBottomOf="@id/tv3"
+            android:background="@drawable/corner"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            android:text="العشاء :  20:00"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="start|center"
+            app:layout_constraintTop_toBottomOf="@id/tv4"
             android:background="@drawable/corner"
             android:paddingHorizontal="16dp"
             android:layout_marginTop="16dp"/>
@@ -75,4 +130,4 @@
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.motion.widget.MotionLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/prayerTimes"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@drawable/pray_time_corner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:padding="8dp"/>
+        <Constraint
+            android:id="@+id/masqed"
+            android:layout_width="match_parent"
+            android:layout_height="364dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/ramdanKarream"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginHorizontal="16dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/masged_colored" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/prayerTimes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pray_time_corner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:padding="8dp"/>
+        <Constraint
+            android:id="@+id/masqed"
+            android:layout_width="match_parent"
+            android:layout_height="364dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/ramdanKarream"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginHorizontal="16dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/masged_colored" />
+    </ConstraintSet>
+
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@+id/start" >
+        <OnSwipe
+            app:touchAnchorId="@id/prayerTimes"
+            app:dragDirection="dragDown"/>
+    </Transition>
+</MotionScene>
