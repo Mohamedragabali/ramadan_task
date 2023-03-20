@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Ramadan</string>
+    <string name="alfajr">الفجر : 04:00</string>
+    <string name="dhuhr">الظهر : 12:00</string>
+    <string name="alAsr">العصر : 15:00</string>
+    <string name="maghrib">المغرب : 18:00</string>
+    <string name="isha">العشاء : 20:00</string>
 </resources>
