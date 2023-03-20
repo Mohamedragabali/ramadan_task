@@ -7,21 +7,15 @@
             android:id="@+id/prayerTimes"
             android:layout_width="match_parent"
             android:layout_height="32dp"
-            android:background="@drawable/pray_time_corner"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:padding="8dp"/>
+            app:layout_constraintBottom_toBottomOf="parent"/>
         <Constraint
             android:id="@+id/masqed"
             android:layout_width="match_parent"
             android:layout_height="364dp"
             android:visibility="visible"
             app:layout_constraintBottom_toTopOf="@id/ramdanKarream"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginHorizontal="16dp"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            app:lottie_rawRes="@raw/masged_colored" />
+            app:layout_constraintStart_toStartOf="parent"/>
 
     </ConstraintSet>
 
@@ -30,21 +24,15 @@
             android:id="@+id/prayerTimes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/pray_time_corner"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:padding="8dp"/>
+            app:layout_constraintBottom_toBottomOf="parent"/>
         <Constraint
             android:id="@+id/masqed"
             android:layout_width="match_parent"
             android:layout_height="364dp"
             android:visibility="gone"
             app:layout_constraintBottom_toTopOf="@id/ramdanKarream"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginHorizontal="16dp"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            app:lottie_rawRes="@raw/masged_colored" />
+            app:layout_constraintStart_toStartOf="parent" />
     </ConstraintSet>
 
     <Transition
